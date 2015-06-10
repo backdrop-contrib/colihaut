@@ -3,14 +3,14 @@
 /**
  * Implements hook_preprocess_maintenance_page().
  */
-function senjo_preprocess_maintenance_page(&$variables) {
+function colihaut_preprocess_maintenance_page(&$variables) {
   backdrop_add_css(backdrop_get_path('theme', 'bartik') . '/css/maintenance-page.css');
 }
 
 /**
  * Implements hook_preprocess_layout().
  */
-function senjo_preprocess_layout(&$variables) {
+function colihaut_preprocess_layout(&$variables) {
   if ($variables['content']['header']) {
     $variables['content']['header'] = '<div class="l-header-inner">' . $variables['content']['header'] . '</div>';
   }
@@ -19,14 +19,14 @@ function senjo_preprocess_layout(&$variables) {
 /**
  * Implements theme_menu_tree().
  */
-function senjo_menu_tree($variables) {
+function colihaut_menu_tree($variables) {
   return '<ul class="menu clearfix">' . $variables['tree'] . '</ul>';
 }
 
 /**
  * Implements theme_field__field_type().
  */
-function senjo_field__taxonomy_term_reference($variables) {
+function colihaut_field__taxonomy_term_reference($variables) {
   $output = '';
 
   // Render the label, if it's not hidden.
