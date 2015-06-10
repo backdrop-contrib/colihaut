@@ -10,7 +10,6 @@ body {
   padding: 0;
   border: 0;
   outline: 0;
-  background-color: #F2F2F2;
 }
 a:link,
 a:visited {
@@ -320,7 +319,8 @@ body.admin-bar .layout {
 .l-messages,
 .l-footer-wrapper,
 .l-footer,
-.l-top-banner {
+.l-top-banner,
+.l-main-wrapper {
   -webkit-flex: 0 0 auto;
   -ms-flex: 0 0 auto;
   flex: 0 0 auto;
@@ -329,7 +329,7 @@ body.admin-bar .layout {
 /* ------------------ Blocks ------------------ */
 
 .block {
-  margin: 20px 0;
+  margin: 20px;
 }
 
 
@@ -577,9 +577,8 @@ body.admin-bar .layout {
 .l-header ul.menu a:focus {
   color: #eee;
 }
-.l-header ul.menu a:active {
-  background: #b3b3b3;
-  background: rgba(255, 255, 255, 1);
+.l-header ul.menu a.active {
+font-weight:bold;
 }
 .l-header ul.menu li a.active {
   border-bottom: none;
@@ -610,6 +609,10 @@ margin:auto;
 .l-container {
   margin-top: 20px;
   margin-bottom: 40px;
+}
+
+.l-main-wrapper {
+  background-color: #F2F2F2;
 }
 
 /* ----------------- Top ----------------- */
