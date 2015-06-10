@@ -2,6 +2,7 @@ name = Colihaut
 description = Theme for Backdrop CMS.
 version = 1.x
 backdrop = 1.x
+type = theme
 
 stylesheets[all][] = css/style.css
 stylesheets[all][] = css/colors.css
