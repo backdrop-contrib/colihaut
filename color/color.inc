@@ -1,85 +1,59 @@
 <?php
 
 // Put the logo path into JavaScript for the live preview.
-backdrop_add_js(array('color' => array('logo' => theme_get_setting('logo', 'bartik'))), 'setting');
+backdrop_add_js(array('color' => array('logo' => theme_get_setting('logo', 'colihaut'))), 'setting');
 
 $info = array(
   // Available colors and color labels used in theme.
   'fields' => array(
     'top' => t('Header background'),
-    'bg' => t('Main background'),
-    'sidebar' => t('Sidebar background'),
-    'sidebarborders' => t('Sidebar borders'),
+    'bodybg' => t('Main background'),
+    'pagebg' => t('Page background'),
     'footer' => t('Footer background'),
     'titleslogan' => t('Title and slogan'),
     'text' => t('Text color'),
+    'nodeheader' => t('Article Header'),
     'link' => t('Link color'),
   ),
   // Pre-defined color schemes.
   'schemes' => array(
     'default' => array(
-      'title' => t('Blue Lagoon (default)'),
+      'title' => t('Deep Blue (default)'),
       'colors' => array(
         'top' => '#0779bf',
-        'bg' => '#ffffff',
-        'sidebar' => '#f6f6f2',
-        'sidebarborders' => '#f9f9f9',
+        'bodybg' => '#f2f2f2',
+        'pagebg' => '#ffffff',
         'footer' => '#292929',
         'titleslogan' => '#fffeff',
         'text' => '#3b3b3b',
+        'nodeheader' => '#0779bf',
         'link' => '#0071B3',
       ),
     ),
-    'firehouse' => array(
-      'title' => t('Firehouse'),
+    'green' => array(
+      'title' => t('Grass Green'),
       'colors' => array(
-        'top' => '#cd2d2d',
-        'bg' => '#ffffff',
-        'sidebar' => '#f1f4f0',
-        'sidebarborders' => '#ededed',
+        'top' => '#259824',
+        'bodybg' => '#f2f2f2',
+        'pagebg' => '#ffffff',
         'footer' => '#1f1d1c',
         'titleslogan' => '#fffeff',
         'text' => '#3b3b3b',
-        'link' => '#d6121f',
+        'nodeheader' => '#259824',
+        'link' => '#259824',
       ),
     ),
-    'ice' => array(
-      'title' => t('Ice'),
+    'brown' => array(
+      'title' => t('Earth Brown'),
       'colors' => array(
-        'top' => '#d0d0d0',
-        'bg' => '#ffffff',
-        'sidebar' => '#ffffff',
-        'sidebarborders' => '#cccccc',
+        'top' => '#985624',
+        'bodybg' => '#f2f2f2',
+        'pagebg' => '#ffffff',
         'footer' => '#24272c',
-        'titleslogan' => '#000000',
+        'titleslogan' => '#fffeff',
         'text' => '#4a4a4a',
-        'link' => '#019dbf',
-      ),
-    ),
-    'plum' => array(
-      'title' => t('Plum'),
-      'colors' => array(
-        'top' => '#4c1c58',
-        'bg' => '#fffdf7',
-        'sidebar' => '#edede7',
-        'sidebarborders' => '#e7e7e7',
-        'footer' => '#2c2c28',
-        'titleslogan' => '#ffffff',
-        'text' => '#301313',
-        'link' => '#9d408d',
-      ),
-    ),
-    'slate' => array(
-      'title' => t('Slate'),
-      'colors' => array(
-        'top' => '#4a4a4a',
-        'bg' => '#ffffff',
-        'sidebar' => '#ffffff',
-        'sidebarborders' => '#d0d0d0',
-        'footer' => '#161617',
-        'titleslogan' => '#ffffff',
-        'text' => '#3b3b3b',
-        'link' => '#0073b6',
+        'nodeheader' => '#985624',
+        'link' => '#985624',
       ),
     ),
   ),
