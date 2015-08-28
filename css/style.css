@@ -383,6 +383,7 @@ body.admin-bar .layout {
   font-size: 1.821em;
   color: #686868;
   line-height: 1;
+  font-family: "Roboto Slab",serif;
 }
 .block-system-header h1.site-name {
   margin: 0;
@@ -397,6 +398,9 @@ body.admin-bar .layout {
   font-style: italic;
 }
 /* Region header blocks. */
+.l-header .block {
+  margin: 20px 0;
+}
 .l-header .block:after {
   /* Clearfix */
   content: "";
@@ -714,8 +718,9 @@ article .link-wrapper {
   text-align: left;
 }
 .field-type-image img,
-.user-picture img {
+.user-picture img, article img {
   margin-bottom: 1em;
+  max-width: 100%;
 }
 article .link-wrapper ul.links {
   color: #68696b;
