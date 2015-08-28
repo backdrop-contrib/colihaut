@@ -8,13 +8,11 @@ Slider module.
 Installation
 ------------
 - Colihaut is best used with Senjo Layout.
-
 - Install this theme using the official Backdrop CMS instructions at
   https://backdropcms.org/guide/themes
-
 - Visit the configuration page under Appearance > Themes (admin/appearance) 
-  and enable Colihaut.
-
+  to enable Colihaut and change color palettes.
+  
 License
 -------
 
