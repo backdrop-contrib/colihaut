@@ -27,7 +27,7 @@ $info = array(
         'titleslogan' => '#fffeff',
         'text' => '#3b3b3b',
         'nodeheader' => '#0779bf',
-        'link' => '#0071B3',
+        'link' => '#0071b3',
       ),
     ),
     'green' => array(
